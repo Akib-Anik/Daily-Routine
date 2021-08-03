@@ -1,0 +1,338 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+.fas{
+    font-size: 1.5rem;
+    display: none;
+}
+li{
+    list-style: none;
+}
+header{
+    width: 100%;
+}
+header nav{
+    width: 100%;
+    padding: 2rem 25rem;
+    box-shadow: 0 2.8px 2px rgba(0,0,0,0.034),
+    0 3px 2.2px rgba(0,0,0,0.042),
+    0 1.2px 3.2px rgba(0,0,0,0.054),
+    0 2.8px 4.2px rgba(0,0,0,0.064),
+    0 4px 4.2px rgba(0,0,0,0.084),
+    0 5px 18px rgba(0,0,0,0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header nav .links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.links ul li a{
+    margin-right: 3rem;
+    position: relative;
+}
+.links ul li a::before{
+    content: '';
+    width: 0%;
+    height: .2rem;
+    background: black;
+    position: absolute;
+    top: 180%;
+    transition: all 0.3s linear;
+}
+.links ul li a:hover::before{
+    width: 100%;
+}
+.links ul li .active::before{
+    width: 100%;
+}
+header nav .logo h1{
+    font-size: 3rem;
+    font-weight: 400;
+}
+#main{
+    width: 100%;
+    height: 80vh;
+}
+.body{
+    width: 100%;
+    height:74vh;
+}
+.upper_text{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5rem;
+    position: relative;
+
+}
+.upper_text h1{
+    font-size: 4rem;
+}
+.upper_text h1::before{
+    content: '\f200';
+    font-family: "Font Awesome 5 Free";
+    /* position: absolute; */
+    /* left: 40%; */
+}
+.upper_text h1::after{
+    content: '\f7b9';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    left: 49%;
+    top: 120%;
+    font-size: 2rem;
+    animation: ghuro 1s linear infinite;
+}
+@keyframes ghuro{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.middle_text{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 8rem;
+}
+.middle_text h1{
+    font-size: 4.5rem;
+    word-spacing: 4rem;
+    background: black;
+    color: white;
+    display: inline-block;
+    padding: 1rem 1.6rem;
+}
+.items{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5rem;
+}
+.items .item1{
+    width: 25rem;
+    height: 22rem;
+    box-shadow: 0 2.8px 2px rgba(0,0,0,0.034),
+    0 3px 2.2px rgba(0,0,0,0.042),
+    0 1.2px 3.2px rgba(0,0,0,0.054),
+    0 2.8px 4.2px rgba(0,0,0,0.064),
+    0 4px 4.2px rgba(0,0,0,0.084),
+    0 5px 18px rgba(0,0,0,0.12);
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     flex-direction: column;
+     transition: all 0.2s linear;
+}
+.items .item2{
+    width: 25rem;
+    height: 22rem;
+    box-shadow: 0 2.8px 2px rgba(0,0,0,0.034),
+    0 3px 2.2px rgba(0,0,0,0.042),
+    0 1.2px 3.2px rgba(0,0,0,0.054),
+    0 2.8px 4.2px rgba(0,0,0,0.064),
+    0 4px 4.2px rgba(0,0,0,0.084),
+    0 5px 18px rgba(0,0,0,0.12);
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     flex-direction: column;
+     background: black;
+     transition: all 0.2s linear;
+}
+.items .item1:hover,
+.items .item2:hover{
+    transform: scale(1.1);
+}
+
+.items .item1 button{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding: 1.3rem 3rem;
+    background: transparent;
+    outline: none;
+    border: .4rem solid black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.items .item2 button{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding: 1.3rem 3rem;
+    background: transparent;
+    outline: none;
+    border: .4rem solid white;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+.item1 h3{
+    font-size: 1.8rem;
+}
+.item2 h3{
+    font-size: 1.8rem;
+    color: white;
+}
+.footer{
+    width: 100%;
+    height: 6vh;
+    background: rgb(34, 34, 34);
+    position: absolute;
+    line-height: 6vh;
+    bottom: 0;
+    text-align: center;
+}
+.footer h1{
+    font-size: 2rem;
+    color: white;
+}
+#body{
+    width: 100%;
+    height:100vh;
+    position: relative;
+}
+.top_text{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.incom_items .item_1{
+    margin-bottom: 8rem;
+}
+.top_text h1{
+    margin-top: 8rem;
+    font-size: 4.5rem;
+    margin-bottom: 5rem;
+ 
+}
+.top_text h1::before{
+    content: '\f542';
+    font-family: "Font Awesome 5 Free";
+    margin-right: 2rem;
+    
+}
+.com{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.com h3{
+    font-size: 2.5rem;
+    border-top: .3rem solid;
+    border-bottom: .3rem solid;
+    display: inline-block;
+    padding: .4rem 0;
+}
+.com h3::before{
+    content: '\f46c';
+    font-family: "Font Awesome 5 Free";
+    margin-right: 2rem;
+}
+.com_items{
+    width: 50%;
+    margin: auto;
+    margin-top: 5rem;   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+.item_1,.item_2,.item_3{
+    width: 20rem;
+    height: 14rem;
+    box-shadow:0 2.8px 2px rgba(0,0,0,0.034),
+    0 3px 2.2px rgba(0,0,0,0.042),
+    0 1.2px 3.2px rgba(0,0,0,0.054),
+    0 2.8px 4.2px rgba(0,0,0,0.064),
+    0 4px 4.2px rgba(0,0,0,0.084),
+    0 5px 18px rgba(0,0,0,0.12);;
+    display: grid;
+    place-items: center;
+}
+h4{
+    font-size: 1.5rem;
+}
+.item_1 h5,.item_2 h5,.item_3 h5{
+    font-size: 1.2rem;
+    letter-spacing: .3rem;
+}
+.item_1 h5::before,.item_2 h5::before,.item_3 h5::before{
+    content: '\f0da';
+    font-family: "Font Awesome 5 Free";
+    margin-right: .4rem;
+}
+.item_1 h5::after,.item_2 h5::after,.item_3 h5::after{
+    content: '\f0d9';
+    font-family: "Font Awesome 5 Free";
+    margin-left: .4rem;
+}
+
+.cmn_btn{
+    background: transparent;
+    padding: .3rem 1rem;
+    border-radius: .8rem;
+    outline: none;
+    border: .3rem solid;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+.cmn_btn a{
+    margin: auto;
+    font-size: 1.3rem;
+    font-weight:lighter;
+}
+.cmn_btn:hover{
+    background: black;
+}
+.cmn_btn:hover > a{
+    color: white;
+}
+.links ul li .noob::before{
+    width: 100%;
+}
+.incom{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 8rem;
+}
+.incom h3{
+    font-size: 2.5rem;
+    border-top: .3rem solid;
+    border-bottom: .3rem solid;
+    display: inline-block;
+    padding: .4rem 0;
+}
+.incom h3::before{
+    content: '\f242';
+    font-family: "Font Awesome 5 Free";
+    margin-right: 2rem;
+}
+.incom_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+}
